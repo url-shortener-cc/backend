@@ -1,2 +1,3 @@
-# backend
-Repo for Backend of URL shortener
+# UrlShortenerBe
+
+This NodeJS project is the backend part of URL Shortener
