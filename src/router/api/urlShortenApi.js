@@ -1,14 +1,10 @@
-const router = require("express").Router();
-const {
-  getShortURL,
-  createShortURL,
-  deleteShortURL,
-  redirectToURL,
-} = require("../../controllers/urlShorten.controller");
-
-router.get("/get", getShortURL);
-router.delete("/delete", deleteShortURL);
-router.get("/redirect", redirectToURL);
-router.post("/create", createShortURL);
-
-module.exports = router;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const router = (0, express_1.Router)();
+const urlShorten_controller_1 = require("../../controllers/urlShorten.controller");
+router.get("/get", urlShorten_controller_1.getShortURL);
+router.delete("/delete", urlShorten_controller_1.deleteShortURL);
+router.get("/redirect", urlShorten_controller_1.redirectToURL);
+router.post("/create", urlShorten_controller_1.createShortURL);
+exports.default = router;
